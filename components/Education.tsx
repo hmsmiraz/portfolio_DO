@@ -11,7 +11,7 @@ interface EducationProps {
     authors: string[];
     year: string;
     publisher: string;
-    doi: string;
+    doi_url: string;
   }>;
 }
 
