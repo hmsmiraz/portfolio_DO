@@ -1,0 +1,138 @@
+{
+  "personal": {
+    "name": "Hassan Md. Sharfuddin Miraz",
+    "title": "DevOps Engineer",
+    "tagline": "Building Scalable Cloud Infrastructure & Automation Systems",
+    "location": "Uttara, Dhaka, Bangladesh",
+    "email": "hassan.sharfuddin.miraz@gmail.com",
+    "phone": "+880 1835 964 977",
+    "github": "https://github.com/hmsmiraz",
+    "gitlab": "https://gitlab.com/hmsmiraz",
+    "linkedin": "https://linkedin.com/in/hassan-md-sharfuddin-miraz-51b254172",
+    "facebook": "https://facebook.com/hassanmdsharfuddin.miraz.9",
+    "summary": "DevOps Engineer with expertise in AWS, CI/CD automation, infrastructure as code (IaC), and containerization. Proficient in deploying, monitoring, and optimizing cloud solutions to enhance scalability, security, and performance. Passionate about automation, reliability engineering, and improving system efficiency through cutting-edge tools and methodologies."
+  },
+  "stats": [
+    { "label": "Cloud Services", "value": "10+", "icon": "cloud" },
+    { "label": "Projects Deployed", "value": "15+", "icon": "rocket" },
+    { "label": "Tools Mastered", "value": "30+", "icon": "tools" },
+    { "label": "Articles Read", "value": "129", "icon": "book" }
+  ],
+  "experience": [
+    {
+      "company": "SDB IT",
+      "role": "DevOps Engineer",
+      "location": "Uttara, Dhaka, Bangladesh",
+      "period": "Aug 2024 – Present",
+      "type": "Full-time",
+      "responsibilities": [
+        "Architected, deployed, and optimized scalable three-tier and microservices-based applications on AWS using containerization, IaC, and CI/CD automation tools.",
+        "Engineered and deployed Dockerized and Kubernetes-based applications including a Field Force Management System, improving scalability and deployment speed.",
+        "Automated cloud infrastructure provisioning using Terraform and Ansible, reducing human errors and accelerating development cycles.",
+        "Developed and streamlined GitLab CI/CD pipelines, integrating ArgoCD and GitOps practices for faster releases and improved code quality.",
+        "Managed critical AWS services including VPC, RDS, S3, IAM, ELB, and Auto Scaling ensuring high availability and security.",
+        "Implemented observability solutions using Prometheus, Grafana, and EFK stack enabling proactive monitoring and real-time issue resolution.",
+        "Delivered scalable solutions in Agile Scrum environments ensuring efficient project execution and seamless cross-functional collaboration."
+      ],
+      "tags": ["AWS", "Kubernetes", "Docker", "Terraform", "GitLab CI/CD", "ArgoCD"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Field Force Management (Microservices)",
+      "subtitle": "Containerization & Automation",
+      "description": "Designed and orchestrated a microservices-based Field Force Management application using Docker and Kubernetes, ensuring efficient service management, high availability, and seamless scalability.",
+      "achievements": "Automated infrastructure provisioning and configuration with Terraform and Ansible, significantly reducing manual effort and enhancing deployment efficiency.",
+      "tools": ["Docker", "Kubernetes", "Terraform", "Ansible"],
+      "category": "Infrastructure",
+      "icon": "server"
+    },
+    {
+      "title": "E-Commerce Platform",
+      "subtitle": "Scalable Cloud Deployment & CI/CD Optimization",
+      "description": "Designed and deployed a containerized E-commerce platform on AWS using a robust three-tier architecture, ensuring high scalability, resilience, and performance.",
+      "achievements": "Automated CI/CD pipelines reducing deployment time and streamlining release cycles. Integrated proactive monitoring to identify and resolve issues efficiently.",
+      "tools": ["AWS", "Docker", "Kubernetes", "GitLab CI/CD", "Jenkins", "Prometheus", "Grafana", "Terraform", "Ansible"],
+      "category": "Cloud",
+      "icon": "cloud"
+    },
+    {
+      "title": "CI/CD Pipeline for Microservices",
+      "subtitle": "Field Force Management Automation",
+      "description": "Designed and optimized a CI/CD pipeline for the Field Force Management application, automating build, test, and deployment workflows across microservices.",
+      "achievements": "Implemented GitOps practices with ArgoCD and GitLab CI/CD, ensuring seamless multi-service deployments and accelerating release cycles.",
+      "tools": ["GitLab CI/CD", "ArgoCD", "GitOps"],
+      "category": "CI/CD",
+      "icon": "pipeline"
+    }
+  ],
+  "skills": {
+    "Cloud Platform": ["AWS EC2", "VPC", "RDS", "S3", "IAM", "Load Balancer", "Auto Scaling", "CloudFront"],
+    "Containerization": ["Docker", "Docker Compose", "Docker Swarm", "Kubernetes"],
+    "CI/CD Tools": ["GitLab CI/CD", "Jenkins", "GitOps", "ArgoCD"],
+    "Infrastructure": ["Terraform", "CloudFormation", "Ansible", "Hashicorp Vault"],
+    "Monitoring": ["Prometheus", "Grafana", "Elasticsearch", "Fluentd", "Kibana"],
+    "Languages": ["Shell", "Bash", "YAML", "Python", "JavaScript"],
+    "Databases": ["MySQL", "MongoDB", "PostgreSQL"],
+    "Source Control": ["Git", "GitHub", "GitLab"],
+    "Web Servers": ["Nginx"],
+    "Operating System": ["Linux"]
+  },
+  "education": [
+    {
+      "degree": "Master of Science (MSc) in MCSE",
+      "institution": "Port City International University",
+      "location": "Chattogram, Bangladesh",
+      "period": "June 2023 – August 2024",
+      "gpa": "3.00"
+    },
+    {
+      "degree": "Bachelor of Science (BSc) in CSE",
+      "institution": "Port City International University",
+      "location": "Chattogram, Bangladesh",
+      "period": "April 2019 – June 2022",
+      "gpa": "3.40"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC) – Science",
+      "institution": "Chattogram Biggan College",
+      "location": "Chattogram, Bangladesh",
+      "period": "2015 – 2017",
+      "gpa": "3.58"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC) – Science",
+      "institution": "Kokdandi Gunagari High School",
+      "location": "Banshkhali, Chattogram, Bangladesh",
+      "period": "2010 – 2015",
+      "gpa": "4.78"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Emotion Detection in Bangla Music Lyrics Using Machine and Deep Learning Approaches",
+      "authors": ["Hassan Md. Sharfuddin Miraz", "Tahmina Akter", "Mst. Sharmin Akter"],
+      "year": "2025",
+      "publisher": "IEEE Xplore",
+      "doi": true
+    }
+  ],
+  "techIcons": [
+    { "name": "AWS", "category": "cloud" },
+    { "name": "Docker", "category": "container" },
+    { "name": "Kubernetes", "category": "container" },
+    { "name": "Terraform", "category": "infra" },
+    { "name": "Ansible", "category": "infra" },
+    { "name": "GitLab", "category": "cicd" },
+    { "name": "Jenkins", "category": "cicd" },
+    { "name": "ArgoCD", "category": "cicd" },
+    { "name": "Prometheus", "category": "monitoring" },
+    { "name": "Grafana", "category": "monitoring" },
+    { "name": "Linux", "category": "os" },
+    { "name": "Nginx", "category": "server" },
+    { "name": "Python", "category": "lang" },
+    { "name": "Bash", "category": "lang" },
+    { "name": "MongoDB", "category": "db" },
+    { "name": "PostgreSQL", "category": "db" }
+  ]
+}
