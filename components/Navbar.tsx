@@ -8,6 +8,11 @@ const navLinks = [
   { label: 'Skills', href: '#skills' },
   { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },
+  {
+    label: 'Resume',
+    href: 'https://drive.google.com/drive/folders/1B-YPKlsjMMWEHE26j1UXAB7Xs1HOz7X6?usp=sharing',
+    external: true,
+  },
 ]
 
 export default function Navbar() {
@@ -18,7 +23,11 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
-      const sections = navLinks.map(l => l.href.slice(1))
+
+      const sections = navLinks
+        .filter((link) => !link.external && link.href.startsWith('#'))
+        .map((link) => link.href.slice(1))
+
       for (const section of sections.reverse()) {
         const el = document.getElementById(section)
         if (el && window.scrollY >= el.offsetTop - 100) {
@@ -27,14 +36,19 @@ export default function Navbar() {
         }
       }
     }
+
     window.addEventListener('scroll', handleScroll)
+    handleScroll()
+
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? 'glass-card border-b border-neon/10 py-3' : 'py-6'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'glass-card border-b border-neon/10 py-3' : 'py-6'
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
@@ -50,10 +64,12 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
               className={`px-4 py-2 font-mono text-xs tracking-widest uppercase transition-all duration-200 ${
-                active === link.href.slice(1)
+                !link.external && active === link.href.slice(1)
                   ? 'text-neon'
                   : 'text-slate-500 hover:text-slate-200'
               }`}
@@ -61,6 +77,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+
           <a
             href="mailto:hassan.sharfuddin.miraz@gmail.com"
             className="ml-4 px-5 py-2 border border-neon/40 text-neon font-mono text-xs tracking-widest uppercase hover:bg-neon/10 hover:border-neon/80 transition-all duration-200"
@@ -75,9 +92,21 @@ export default function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           <div className="space-y-1.5 w-6">
-            <span className={`block h-px bg-current transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-2.5' : ''}`}/>
-            <span className={`block h-px bg-current transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`}/>
-            <span className={`block h-px bg-current transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-2.5' : ''}`}/>
+            <span
+              className={`block h-px bg-current transition-all duration-300 ${
+                mobileOpen ? 'rotate-45 translate-y-2.5' : ''
+              }`}
+            />
+            <span
+              className={`block h-px bg-current transition-all duration-300 ${
+                mobileOpen ? 'opacity-0' : ''
+              }`}
+            />
+            <span
+              className={`block h-px bg-current transition-all duration-300 ${
+                mobileOpen ? '-rotate-45 -translate-y-2.5' : ''
+              }`}
+            />
           </div>
         </button>
       </div>
@@ -87,14 +116,24 @@ export default function Navbar() {
         <div className="md:hidden glass-card border-t border-neon/10 mt-3 px-6 py-4 flex flex-col gap-3">
           {navLinks.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
               className="font-mono text-xs tracking-widest uppercase text-slate-400 hover:text-neon transition-colors py-2"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
             </a>
           ))}
+
+          <a
+            href="mailto:hassan.sharfuddin.miraz@gmail.com"
+            className="mt-2 px-5 py-2 border border-neon/40 text-neon font-mono text-xs tracking-widest uppercase hover:bg-neon/10 hover:border-neon/80 transition-all duration-200 text-center"
+            onClick={() => setMobileOpen(false)}
+          >
+            Hire Me
+          </a>
         </div>
       )}
     </nav>
