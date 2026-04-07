@@ -273,3 +273,64 @@ body {
   width: 1px;
   background: linear-gradient(to bottom, var(--neon), transparent);
 }
+
+/* ── Mobile Responsive Fixes ── */
+@media (max-width: 768px) {
+  /* Prevent any section from overflowing */
+  section, .container {
+    overflow-x: hidden;
+  }
+
+  /* Hero: single column, full width */
+  .grid.lg\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* About grid: single column */
+  .about-grid, .exp-grid, .edu-pub-grid, .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Skills: 2 columns on mobile */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Projects: 1 column on mobile */
+  .proj-grid, .grid.md\\:grid-cols-2.lg\\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix text overflow in hero */
+  .hero-name, h1, h2 {
+    word-break: break-word;
+  }
+
+  /* Terminal box: full width */
+  .terminal, .stats-grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small: tighter padding */
+  .container, .max-w-6xl {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Skills: still 2 cols */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Buttons full width */
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .hero-btns a {
+    width: 100%;
+    text-align: center;
+  }
+}

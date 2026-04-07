@@ -166,7 +166,7 @@ export default function Hero({ personal, stats }: HeroProps) {
       <div className="absolute top-0 right-0 w-96 h-96 bg-neon-blue/3 blur-3xl rounded-full pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left */}
           <div>
             {/* Badge */}

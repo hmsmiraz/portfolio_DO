@@ -16,7 +16,7 @@
     { "label": "Cloud Services", "value": "10+", "icon": "cloud" },
     { "label": "Projects Deployed", "value": "15+", "icon": "rocket" },
     { "label": "Tools Mastered", "value": "30+", "icon": "tools" },
-    { "label": "Articles Read", "value": "129", "icon": "book" }
+    { "label": "Articles Read", "value": "129+", "icon": "book" }
   ],
   "experience": [
     {
@@ -34,27 +34,48 @@
         "Implemented observability solutions using Prometheus, Grafana, and EFK stack enabling proactive monitoring and real-time issue resolution.",
         "Delivered scalable solutions in Agile Scrum environments ensuring efficient project execution and seamless cross-functional collaboration."
       ],
-      "tags": ["AWS", "Kubernetes", "Docker", "Terraform", "GitLab CI/CD", "ArgoCD"]
+      "tags": [
+        "AWS",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitLab CI/CD",
+        "ArgoCD"
+      ]
     }
   ],
   "projects": [
     {
       "title": "Field Force Management (Microservices)",
       "subtitle": "Containerization & Automation",
-      "description": "Designed and orchestrated a microservices-based Field Force Management application using Docker and Kubernetes, ensuring efficient service management, high availability, and seamless scalability.",
-      "achievements": "Automated infrastructure provisioning and configuration with Terraform and Ansible, significantly reducing manual effort and enhancing deployment efficiency.",
+      "description": "...",
+      "achievements": "...",
       "tools": ["Docker", "Kubernetes", "Terraform", "Ansible"],
       "category": "Infrastructure",
-      "icon": "server"
+      "icon": "server",
+      "repoUrl": "https://gitlab.com/hmsmiraz/ffm-user-management",
+      "repoType": "gitlab"
     },
     {
       "title": "E-Commerce Platform",
       "subtitle": "Scalable Cloud Deployment & CI/CD Optimization",
       "description": "Designed and deployed a containerized E-commerce platform on AWS using a robust three-tier architecture, ensuring high scalability, resilience, and performance.",
       "achievements": "Automated CI/CD pipelines reducing deployment time and streamlining release cycles. Integrated proactive monitoring to identify and resolve issues efficiently.",
-      "tools": ["AWS", "Docker", "Kubernetes", "GitLab CI/CD", "Jenkins", "Prometheus", "Grafana", "Terraform", "Ansible"],
+      "tools": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "GitLab CI/CD",
+        "Jenkins",
+        "Prometheus",
+        "Grafana",
+        "Terraform",
+        "Ansible"
+      ],
       "category": "Cloud",
-      "icon": "cloud"
+      "icon": "cloud",
+      "repoUrl": "https://github.com/hmsmiraz/Microservice",
+      "repoType": "github"
     },
     {
       "title": "CI/CD Pipeline for Microservices",
@@ -63,15 +84,42 @@
       "achievements": "Implemented GitOps practices with ArgoCD and GitLab CI/CD, ensuring seamless multi-service deployments and accelerating release cycles.",
       "tools": ["GitLab CI/CD", "ArgoCD", "GitOps"],
       "category": "CI/CD",
-      "icon": "pipeline"
+      "icon": "pipeline",
+      "repoUrl": "https://gitlab.com/hmsmiraz/ffm-delivery-service",
+      "repoType": "gitlab"
     }
   ],
   "skills": {
-    "Cloud Platform": ["AWS EC2", "VPC", "RDS", "S3", "IAM", "Load Balancer", "Auto Scaling", "CloudFront"],
-    "Containerization": ["Docker", "Docker Compose", "Docker Swarm", "Kubernetes"],
+    "Cloud Platform": [
+      "AWS EC2",
+      "VPC",
+      "RDS",
+      "S3",
+      "IAM",
+      "Load Balancer",
+      "Auto Scaling",
+      "CloudFront"
+    ],
+    "Containerization": [
+      "Docker",
+      "Docker Compose",
+      "Docker Swarm",
+      "Kubernetes"
+    ],
     "CI/CD Tools": ["GitLab CI/CD", "Jenkins", "GitOps", "ArgoCD"],
-    "Infrastructure": ["Terraform", "CloudFormation", "Ansible", "Hashicorp Vault"],
-    "Monitoring": ["Prometheus", "Grafana", "Elasticsearch", "Fluentd", "Kibana"],
+    "Infrastructure": [
+      "Terraform",
+      "CloudFormation",
+      "Ansible",
+      "Hashicorp Vault"
+    ],
+    "Monitoring": [
+      "Prometheus",
+      "Grafana",
+      "Elasticsearch",
+      "Fluentd",
+      "Kibana"
+    ],
     "Languages": ["Shell", "Bash", "YAML", "Python", "JavaScript"],
     "Databases": ["MySQL", "MongoDB", "PostgreSQL"],
     "Source Control": ["Git", "GitHub", "GitLab"],
@@ -111,7 +159,11 @@
   "publications": [
     {
       "title": "Emotion Detection in Bangla Music Lyrics Using Machine and Deep Learning Approaches",
-      "authors": ["Hassan Md. Sharfuddin Miraz", "Tahmina Akter", "Mst. Sharmin Akter"],
+      "authors": [
+        "Hassan Md. Sharfuddin Miraz",
+        "Tahmina Akter",
+        "Mst. Sharmin Akter"
+      ],
       "year": "2025",
       "publisher": "IEEE Xplore",
       "doi_url": "https://ieeexplore.ieee.org/document/11013965/authors#authors"

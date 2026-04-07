@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Hassan Md. Sharfuddin Miraz | DevOps Engineer',
   description: 'DevOps Engineer specializing in AWS, Kubernetes, Docker, CI/CD automation, and Infrastructure as Code.',
   keywords: 'DevOps, AWS, Kubernetes, Docker, Terraform, CI/CD, Bangladesh',
+  icons: {
+    icon: '/icon.svg',
+  },
 }
 
 export default function RootLayout({
