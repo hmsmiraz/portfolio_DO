@@ -108,6 +108,14 @@ export default function Navbar() {
               href="https://drive.google.com/drive/folders/1B-YPKlsjMMWEHE26j1UXAB7Xs1HOz7X6?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="font-mono text-xs tracking-widest uppercase text-slate-400 hover:text-neon transition-colors py-3 border-b border-white/5"
+            >
+              Resume
+            </a>
+            <a
+              href="https://drive.google.com/drive/folders/1B-YPKlsjMMWEHE26j1UXAB7Xs1HOz7X6?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 py-3 border border-neon/40 text-neon font-mono text-xs tracking-widest uppercase text-center hover:bg-neon/10 transition-all"
               onClick={() => setMobileOpen(false)}
             >
