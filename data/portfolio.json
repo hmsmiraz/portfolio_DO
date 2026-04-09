@@ -46,6 +46,53 @@
   ],
   "projects": [
     {
+      "title": "AI Skill Learning Platform (Microservices)",
+      "subtitle": "Jenkins Multi-Pipeline Orchestration",
+      "description": "Architected a scalable microservices platform for AI-powered skill development using Docker and Kubernetes. Managed course delivery, user analytics, and personalized learning paths across 15+ services with 99.9% uptime.",
+      "achievements": "Engineered Jenkins multi-pipeline architecture with shared libraries for 15+ microservices, reducing deployment time from 2 hours to 7 minutes. Automated infrastructure with Terraform across multi-project pipelines, achieving 40% cost optimization.",
+      "tools": [
+        "Jenkins",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Prometheus",
+        "Grafana"
+      ],
+      "category": "Infrastructure",
+      "icon": "server",
+      "repoUrl": "https://www.skillbnk.com/",
+      "repoType": "website"
+    },
+    {
+      "title": "Intelligent Business Communication System",
+      "subtitle": "Jenkins Multi-Project Serverless",
+      "description": "Deployed a real-time AI communication platform using AWS Lambda, EKS, and Kafka for message processing. Enabled omnichannel business comms with real-time analytics and ML inference at edge locations.",
+      "achievements": "Implemented Jenkins multi-project pipeline matrix for serverless deployments across 8 environments, achieving 500ms p99 latency. Centralized observability with shared Jenkins pipeline libraries monitoring 10M+ daily messages.",
+      "tools": [
+        "Jenkins",
+        "AWS Lambda",
+        "EKS",
+        "Kafka",
+        "Terraform",
+        "Prometheus"
+      ],
+      "category": "Cloud Native",
+      "icon": "cloud-native",
+      "repoUrl": "https://www.bizcoms.ai/",
+      "repoType": "website"
+    },
+    {
+      "title": "QuickSkill AI Learning Platform",
+      "subtitle": "Jenkins Multi-Branch GitOps",
+      "description": "Orchestrated a hybrid AI platform for rapid skill acquisition using Jenkins multi-branch pipelines, ArgoCD, and multi-cloud strategy (AWS/GCP). Delivered zero-downtime blue-green deployments for 50K+ concurrent learners.",
+      "achievements": "Developed comprehensive Jenkins multi-pipeline strategy with 25+ interconnected projects, reducing infrastructure costs by 35%. Implemented progressive delivery matrix with canary releases across 3 environments, achieving 99.99% success rate.",
+      "tools": ["Jenkins", "ArgoCD", "Helm", "AWS EKS", "GCP GKE", "Terraform"],
+      "category": "DevOps",
+      "icon": "devops",
+      "repoUrl": "https://www.quickskill.ai/",
+      "repoType": "website"
+    },
+    {
       "title": "Field Force Management (Microservices)",
       "subtitle": "Containerization & Automation",
       "description": "Designed and orchestrated a microservices-based Field Force Management application using Docker and Kubernetes. The system manages field agents, tasks, and real-time tracking across distributed services, ensuring high availability, fault tolerance, and seamless scalability in production.",
@@ -87,40 +134,7 @@
       "icon": "pipeline",
       "repoUrl": "https://gitlab.com/hmsmiraz/ffm-delivery-service",
       "repoType": "gitlab"
-    },
-    {
-    "title": "AI Skill Learning Platform (Microservices)",
-    "subtitle": "Jenkins Multi-Pipeline Orchestration",
-    "description": "Architected a scalable microservices platform for AI-powered skill development using Docker and Kubernetes. Managed course delivery, user analytics, and personalized learning paths across 15+ services with 99.9% uptime.",
-    "achievements": "Engineered Jenkins multi-pipeline architecture with shared libraries for 15+ microservices, reducing deployment time from 2 hours to 7 minutes. Automated infrastructure with Terraform across multi-project pipelines, achieving 40% cost optimization.",
-    "tools": ["Jenkins", "Docker", "Kubernetes", "Terraform", "Prometheus", "Grafana"],
-    "category": "Infrastructure",
-    "icon": "server",
-    "repoUrl": "https://www.skillbnk.com/",
-    "repoType": "website"
-  },
-  {
-    "title": "Intelligent Business Communication System",
-    "subtitle": "Jenkins Multi-Project Serverless",
-    "description": "Deployed a real-time AI communication platform using AWS Lambda, EKS, and Kafka for message processing. Enabled omnichannel business comms with real-time analytics and ML inference at edge locations.",
-    "achievements": "Implemented Jenkins multi-project pipeline matrix for serverless deployments across 8 environments, achieving 500ms p99 latency. Centralized observability with shared Jenkins pipeline libraries monitoring 10M+ daily messages.",
-    "tools": ["Jenkins", "AWS Lambda", "EKS", "Kafka", "Terraform", "Prometheus"],
-    "category": "Cloud Native",
-    "icon": "cloud-native",
-    "repoUrl": "https://www.bizcoms.ai/",
-    "repoType": "website"
-  },
-  {
-    "title": "QuickSkill AI Learning Platform",
-    "subtitle": "Jenkins Multi-Branch GitOps",
-    "description": "Orchestrated a hybrid AI platform for rapid skill acquisition using Jenkins multi-branch pipelines, ArgoCD, and multi-cloud strategy (AWS/GCP). Delivered zero-downtime blue-green deployments for 50K+ concurrent learners.",
-    "achievements": "Developed comprehensive Jenkins multi-pipeline strategy with 25+ interconnected projects, reducing infrastructure costs by 35%. Implemented progressive delivery matrix with canary releases across 3 environments, achieving 99.99% success rate.",
-    "tools": ["Jenkins", "ArgoCD", "Helm", "AWS EKS", "GCP GKE", "Terraform"],
-    "category": "DevOps",
-    "icon": "devops",
-    "repoUrl": "https://www.quickskill.ai/",
-    "repoType": "website"
-  }
+    }
   ],
   "skills": {
     "Cloud Platform": [
