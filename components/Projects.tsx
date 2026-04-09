@@ -17,6 +17,8 @@ const categoryColors: Record<string, string> = {
   Infrastructure: "text-neon border-neon/30 bg-neon/5",
   Cloud: "text-neon-blue border-neon-blue/30 bg-neon-blue/5",
   "CI/CD": "text-purple-400 border-purple-400/30 bg-purple-400/5",
+  "Cloud Native": "text-lime-400 border-lime-400/30 bg-lime-400/5",
+  DevOps: "text-red-400 border-red-400/30 bg-red-400/5",
 };
 
 const ProjectIcon = ({ type }: { type: string }) => {
@@ -36,6 +38,7 @@ const ProjectIcon = ({ type }: { type: string }) => {
         />
       </svg>
     );
+
   if (type === "cloud")
     return (
       <svg
@@ -52,6 +55,54 @@ const ProjectIcon = ({ type }: { type: string }) => {
         />
       </svg>
     );
+
+  if (type === "cloud-native")
+    return (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M7 8h10M7 12h10M7 16h6"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H9l-4 3V7a2 2 0 012-2z"
+        />
+      </svg>
+    );
+
+  if (type === "devops")
+    return (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M4 7h6M14 7h6M7 4v6m10-6v6M4 17h6m4 0h6m-9-3v6"
+        />
+        <circle cx="12" cy="17" r="2.5" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M7 7h3.5M13.5 7H17M12 14.5V10"
+        />
+      </svg>
+    );
+
   return (
     <svg
       className="w-6 h-6"
@@ -100,23 +151,22 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 transform: hovered === i ? "translateY(-4px)" : "translateY(0)",
               }}
             >
-              {/* Corner decoration */}
               <div className="absolute top-0 right-0 w-16 h-16 opacity-20">
                 <div className="absolute top-0 right-0 w-full h-full border-t border-r border-neon/50" />
               </div>
 
-              {/* Top row */}
               <div className="flex items-center justify-between">
                 <div
-                  className={`p-2 border ${
+                  className={`p-2 border rounded-md ${
                     categoryColors[project.category] ||
                     "text-neon border-neon/30 bg-neon/5"
                   } transition-all`}
                 >
                   <ProjectIcon type={project.icon} />
                 </div>
+
                 <span
-                  className={`font-mono text-xs px-2 py-1 border ${
+                  className={`font-mono text-xs px-2 py-1 border rounded-full ${
                     categoryColors[project.category] ||
                     "text-neon border-neon/30 bg-neon/5"
                   }`}
@@ -125,7 +175,6 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 </span>
               </div>
 
-              {/* Title */}
               <div>
                 <h3 className="font-display font-bold text-white group-hover:text-neon transition-colors">
                   {project.title}
@@ -135,12 +184,10 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 </p>
               </div>
 
-              {/* Description */}
               <p className="text-slate-400 text-xs leading-relaxed flex-1">
                 {project.description}
               </p>
 
-              {/* Achievement */}
               <div className="border-t border-white/5 pt-4">
                 <p className="text-xs text-slate-500 leading-relaxed">
                   <span className="text-neon font-mono">Achievement: </span>
@@ -148,7 +195,6 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 </p>
               </div>
 
-              {/* Tools */}
               <div className="flex flex-wrap gap-1.5">
                 {project.tools.map((tool: string, j: number) => (
                   <span
@@ -160,7 +206,6 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 ))}
               </div>
 
-              {/* Repo link bar */}
               <div className="flex items-center gap-2 pt-3 border-t border-white/5 mt-auto">
                 <span className="font-mono text-xs text-slate-500 truncate">
                   {project.repoType === "github" ? "github.com" : "gitlab.com"}
@@ -170,7 +215,6 @@ export default function Projects({ projects }: { projects: Project[] }) {
                   ↗
                 </span>
               </div>
-
             </a>
           ))}
         </div>
